@@ -1,0 +1,35 @@
+commit 8c13e74696d659a0a93c63b37fcda378ae42848d
+Author: Mihaela Pavlova <mihaela.pavlova@students.finki.ukim.mk>
+Date:   Thu Apr 11 16:18:44 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit fa73aeddcb74260c53646e85b252b3b359646280
+Author: Mihaela Pavlova <mihaela.pavlova@students.finki.ukim.mk>
+Date:   Thu Apr 11 16:14:05 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 4ebebbfb740a9dfc8f09cea68e96b5e0c38d4c20
+Author: Mihaela Pavlova <mihaela.pavlova@students.finki.ukim.mk>
+Date:   Thu Apr 11 16:15:59 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 35d89c55ea6bbecc6990214226df88905facedcd
+Author: Mihaela Pavlova <mihaela.pavlova@students.finki.ukim.mk>
+Date:   Thu Apr 11 16:12:56 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 3fc15f8c797450925be9074fa66814a0988e75dd
+Author: Mihaela Pavlova <mihaela.pavlova@students.finki.ukim.mk>
+Date:   Thu Apr 11 16:11:45 2024 +0200
+
+    Add starter code
+
+commit 18bb1b57c4af346fd0b7610d51b20f910babb335
+Author: Mihaela Pavlova <mihaela.pavlova@students.finki.ukim.mk>
+Date:   Thu Apr 11 16:10:12 2024 +0200
+
+    Initial commit

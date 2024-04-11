@@ -1,0 +1,45 @@
+	Прва лабораториска вежба по Софтверско инженерство
+
+1. Успешно инсталирав Git и креирав профил на GitHub.
+2.Го променив името на главната гранка во master и во 
+сите наредно креирани репозиториуми master ќе биде default името на главната гранка.
+3. Во делот Repositories во десниот ќош се наоѓа командата Create new repository.
+Креирав нов репозиториум и го ставив да биде приватен.
+4.Креирав локален директориум со командата $ mkdir SI_2024_lab1_223143, а потоа влегов во него со командата $ cd SI_2024_lab1_223143 и го иницијализирав со командата $ git init
+5. За поврзување на локалниот репозиториум со оддалечениот репозиториум на GitHub, 
+се користи командата $ git remote add origin git@github.com:mihaelapavlova/SI_2024_lab1_223143.git каде после origin се додава URL адресата на репото.
+6. Со $ nano README.md креирав датотека и се потпишав. Најпрвин го стејџирав README.md со командата $ git add README.md, па потоа го комитнав со $ git commit -m "Initial commit"
+7. Успешно ги симнав трите фајлови, прво со $ cd излегов од SI_2024_lab1_223143 и потоа со командите
+mv C:/Users/user/Downloads/SILab1Main.java SI_2024_lab1_223143/
+mv C:/Users/user/Downloads/SILab1_1.java SI_2024_lab1_223143/
+mv C:/Users/user/Downloads/SILab1_2.java SI_2024_lab1_223143/ ги преместив во директориумот SI_2024_lab1_223143
+Прво ги стејџирав со $ git add . а потоа со $ git commit -m "Add starter code" ги комитнав.
+8. Направив синхронизација на локалното репо со remote репото со командата  $ git push origin master
+9.Најпрво се осигурав дека се наоѓам на гранката master со командата $ git checkout master, а потоа со $ git checkout -b bug1
+и $ git checkout -b bug2 ги креирав гранките потребни за поправање на грешките.
+10. Со командата $ git checkout bug1 се префрлив на гранката bug1
+11.Со командата $ nano  SILab1_1.java влегов во фајлот ја поправи грешката, направив stage со $ git add SILab1_1.java, и потоа направив комит
+$ git commit -m "Fix wrong condition in filterOddLengthStrings"
+12.Со $ git checkout bug2 се префрлив на гранката bug2
+13.Со $ nano  SILab1_2.java го отварам фајлот и ја поправам грешката,го зачувувам и со 
+$ git add SILab1_2.java го стејџирам, а потоа правам комит $ git commit -m "Fix wrong condition in makeBigStringFrom"
+14. Со $ git checkout bug1 се враќам на bug1 гранката.
+15. Го отварам фајлот SILab1Main.java со командата $ nano SILab1Main.java и во линија 16 додавам System.out.println(SILab1_1.filterOddLengthStrings(list)); 
+Потоа правам stage со командата $ git add  SILab1Main.java и на крај комит $ git commit -m "Call method filterOddLengthStrings in main class"
+16.Се префрлам на гранката bug2 со командата $ git checkout bug2
+17.Додавам во 16та линија System.out.println(SILab1_2.makeBigStringFrom(list)); отварајќи го фајлот со $ nano SILab1Main.java, потоа правам
+$ git add  SILab1Main.java и на крај комитувам $ git commit -m "Call method makeBigStringFrom in main class"
+18.Ги синхронизирам гранките со remote репото со командата $ git push origin bug1 и git push origin bug2
+19. $ git checkout master со оваа команда се префрлуваме на master гранката
+20. Со $ git merge bug1 гранката bug1 ја спојуваме кон master. Спојувањето беше успешно направено користејќи fast-forward
+21. Ги синхронизирам гранките со remote репото со командата $ git push origin master
+22.Се прфрлам на гранката bug2 $ git checkout bug2
+23.При извршување на оваа команда $ git rebase master се појави конфликт во  SILab1Main.java кој го разрешив така што одбрав да стои
+System.out.println(SILab1_1.filterOddLengthStrings(list)); потоа направив $ git add SILab1Main.java и $ git rebase --continue.
+24. Успешно се префрлив на гранката master со командата $ git checkout master
+25.Спојувањето се направи по fast-forward стратергија со командата $ git merge bug2
+26. Ги синхронизирам гранките со remote репото со командата $ git push origin master
+27.За да се синхронизира bug2 искористив $ git push origin bug2 --force 
+28.Додадов датотека logs.txt во која ги ископирав досегашните гит логови со командата  $ git log > logs.txt, потоа со $ nano 223143.txt креирав фајл во кој ја водев целата документација.
+ Направив $ git add . за да ги стејџирам двата фајла, a потоа $ git commit -m "Final commit".
+29.За крај направив повторна синхронизација со remote репото $ git push origin master.
